@@ -1,0 +1,5 @@
+base=/system
+export ANDROID_DATA=/data/local/tmp
+export CLASSPATH=/data/local/tmp/monkey.jar
+trap "" HUP
+exec app_process $base/bin com.android.commands.monkey.Monkey $*
